@@ -27,39 +27,7 @@ A structured learning repository combining enterprise networking, AI agents, aut
 
 ---
 
-02_Tasks
-│
-├── 01-10_Day_Foundation
-│   │
-│   │ [001_A_Day_Introduction_AI_Automation_Agents.md](./02_Tasks/01-10_Day_Foundation/001_A_Day_Introduction_AI_Automation_Agents.md)
-│   │ [001_B_Day_Introduction_AI_Automation_Agents_Network.md](./02_Tasks/01-10_Day_Foundation/001_B_Day_Introduction_AI_Automation_Agents_Network.md)
-│   │
-│   │ [002_A_Day_Tools_Overview_n8n_Langflow_LangChain.md](./02_Tasks/01-10_Day_Foundation/002_A_Day_Tools_Overview_n8n_Langflow_LangChain.md)
-│   │ [002_B_Day_Tools_Overview_n8n_Langflow_LangChain_Network.md](./02_Tasks/01-10_Day_Foundation/002_B_Day_Tools_Overview_n8n_Langflow_LangChain_Network.md)
-│   │
-│   │ [003_A_Day_Setup_Automation_Environment.md](./02_Tasks/01-10_Day_Foundation/003_A_Day_Setup_Automation_Environment.md)
-│   │ [003_B_Day_Setup_Automation_Environment_Network.md](./02_Tasks/01-10_Day_Foundation/003_B_Day_Setup_Automation_Environment_Network.md)
-│   │
-│   │ [004_A_Day_Understanding_APIs_Webhooks.md](./02_Tasks/01-10_Day_Foundation/004_A_Day_Understanding_APIs_Webhooks.md)
-│   │ [004_B_Day_Understanding_APIs_Webhooks_Network.md](./02_Tasks/01-10_Day_Foundation/004_B_Day_Understanding_APIs_Webhooks_Network.md)
-│   │
-│   │ [005_A_Day_First_n8n_Workflow.md](./02_Tasks/01-10_Day_Foundation/005_A_Day_First_n8n_Workflow.md)
-│   │ [005_B_Day_First_n8n_Workflow_Network.md](./02_Tasks/01-10_Day_Foundation/005_B_Day_First_n8n_Workflow_Network.md)
-│   │
-│   │ [006_A_Day_Project1_Email_Automation_Agent.md](./02_Tasks/01-10_Day_Foundation/006_A_Day_Project1_Email_Automation_Agent.md)
-│   │ [006_B_Day_Project1_Email_Automation_Agent_Network.md](./02_Tasks/01-10_Day_Foundation/006_B_Day_Project1_Email_Automation_Agent_Network.md)
-│   │
-│   │ [007_A_Day_Integrating_LLMs_n8n.md](./02_Tasks/01-10_Day_Foundation/007_A_Day_Integrating_LLMs_n8n.md)
-│   │ [007_B_Day_Integrating_LLMs_n8n_Network.md](./02_Tasks/01-10_Day_Foundation/007_B_Day_Integrating_LLMs_n8n_Network.md)
-│   │
-│   │ [008_A_Day_Error_Handling_n8n.md](./02_Tasks/01-10_Day_Foundation/008_A_Day_Error_Handling_n8n.md)
-│   │ [008_B_Day_Error_Handling_n8n_Network.md](./02_Tasks/01-10_Day_Foundation/008_B_Day_Error_Handling_n8n_Network.md)
-│   │
-│   │ [009_A_Day_First_Assignment.md](./02_Tasks/01-10_Day_Foundation/009_A_Day_First_Assignment.md)
-│   │ [009_B_Day_First_Assignment_Network.md](./02_Tasks/01-10_Day_Foundation/009_B_Day_First_Assignment_Network.md)
-│   │
-│   │ [010_A_Day_n8n_Visual_Builder.md](./02_Tasks/01-10_Day_Foundation/010_A_Day_n8n_Visual_Builder.md)
-│   │ [010_B_Day_n8n_Visual_Builder_Network.md](./02_Tasks/01-10_Day_Foundation/010_B_Day_n8n_Visual_Builder_Network.md)
+## 🔰 01–10 Day Foundation - [001A Introduction to AI Automation Agents](./02_Tasks/01-10_Day_Foundation/001_A_Day_Introduction_AI_Automation_Agents.md) - [001B Introduction to AI Automation Agents (Network)](./02_Tasks/01-10_Day_Foundation/001_B_Day_Introduction_AI_Automation_Agents_Network.md) - [002A Tools Overview (n8n, Langflow, LangChain)](./02_Tasks/01-10_Day_Foundation/002_A_Day_Tools_Overview_n8n_Langflow_LangChain.md) - [002B Tools Overview (Network)](./02_Tasks/01-10_Day_Foundation/002_B_Day_Tools_Overview_n8n_Langflow_LangChain_Network.md) - [003A Automation Environment Setup](./02_Tasks/01-10_Day_Foundation/003_A_Day_Setup_Automation_Environment.md) - [003B Automation Environment Setup (Network)](./02_Tasks/01-10_Day_Foundation/003_B_Day_Setup_Automation_Environment_Network.md) - [004A APIs & Webhooks Basics](./02_Tasks/01-10_Day_Foundation/004_A_Day_Understanding_APIs_Webhooks.md) - [004B APIs & Webhooks (Network)](./02_Tasks/01-10_Day_Foundation/004_B_Day_Understanding_APIs_Webhooks_Network.md) - [005A First n8n Workflow](./02_Tasks/01-10_Day_Foundation/005_A_Day_First_n8n_Workflow.md) - [005B First n8n Workflow (Network)](./02_Tasks/01-10_Day_Foundation/005_B_Day_First_n8n_Workflow_Network.md) - [006A Email Automation Agent](./02_Tasks/01-10_Day_Foundation/006_A_Day_Project1_Email_Automation_Agent.md) - [006B Email Automation Agent (Network)](./02_Tasks/01-10_Day_Foundation/006_B_Day_Project1_Email_Automation_Agent_Network.md) - [007A LLM Integration with n8n](./02_Tasks/01-10_Day_Foundation/007_A_Day_Integrating_LLMs_n8n.md) - [007B LLM Integration (Network)](./02_Tasks/01-10_Day_Foundation/007_B_Day_Integrating_LLMs_n8n_Network.md) - [008A Error Handling in Automation](./02_Tasks/01-10_Day_Foundation/008_A_Day_Error_Handling_n8n.md) - [008B Error Handling (Network)](./02_Tasks/01-10_Day_Foundation/008_B_Day_Error_Handling_n8n_Network.md) - [009A First Assignment](./02_Tasks/01-10_Day_Foundation/009_A_Day_First_Assignment.md) - [009B First Assignment (Network)](./02_Tasks/01-10_Day_Foundation/009_B_Day_First_Assignment_Network.md) - [010A n8n Visual Builder](./02_Tasks/01-10_Day_Foundation/010_A_Day_n8n_Visual_Builder.md) - [010B n8n Visual Builder (Network)](./02_Tasks/01-10_Day_Foundation/010_B_Day_n8n_Visual_Builder_Network.md)
 
 ---
 
