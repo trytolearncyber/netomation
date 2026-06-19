@@ -1,0 +1,134 @@
+{
+  "name": "5B_Task 2: Schedule Trigger → MikroTik Mock → IF node → Alert",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -448,
+        -96
+      ],
+      "id": "c5b2c9c0-23dc-439e-a3ef-1adfc0728fd2",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "jsCode": "const interfaces = $input.all();\n\nreturn interfaces.map(item => {\n  const iface = item.json;\n  return {\n    json: {\n      name: iface.name,\n      running: iface.running,\n      rx_mb: (parseInt(iface[\"rx-byte\"]) / 1024 / 1024).toFixed(2),\n      tx_mb: (parseInt(iface[\"tx-byte\"]) / 1024 / 1024).toFixed(2)\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        -96
+      ],
+      "id": "d5173e0f-79a8-4a85-8390-004596152571",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "url": "http://192.168.241.1:3002/mikrotik/interface",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -224,
+        -96
+      ],
+      "id": "d71a61a9-7342-4c25-8189-021ba0ce603f",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "47332cd6-8e56-4d51-b474-1e40a3c4b903",
+              "leftValue": "={{ $json.rx_mb }}",
+              "rightValue": 400,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        224,
+        -96
+      ],
+      "id": "180c4a2f-8b40-4462-ade1-2639c54d8ff5",
+      "name": "If"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "8b5fec58-b29d-4c59-a90d-83eac140cdc5",
+  "meta": {
+    "instanceId": "e04b4d80c1dd2a688c4034915662d8ca13ceb3a569684e649a6efc5455798548"
+  },
+  "nodeGroups": [],
+  "id": "vtlvl8gBdpaEl5kc",
+  "tags": []
+}

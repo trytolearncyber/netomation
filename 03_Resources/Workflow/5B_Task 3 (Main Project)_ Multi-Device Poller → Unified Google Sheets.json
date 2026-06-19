@@ -1,0 +1,327 @@
+{
+  "name": "5B_Task 3 (Main Project): Multi-Device Poller → Unified Google Sheets",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1248,
+        -16
+      ],
+      "id": "bb9454c9-5737-458b-abd2-f9ef886d8f27",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "http://192.168.241.1:3001/cisco/interface",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -1024,
+        -208
+      ],
+      "id": "ad2ecf65-52a9-4a8e-a627-0c0c98526040",
+      "name": "HTTP Request_cisco"
+    },
+    {
+      "parameters": {
+        "url": "http://192.168.241.1:3002/mikrotik/interface",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -1024,
+        -16
+      ],
+      "id": "c0bcbede-af20-490d-a1ab-537c25e7d665",
+      "name": "HTTP Request_mikrotik"
+    },
+    {
+      "parameters": {
+        "url": "http://192.168.241.1:3003/fortinet/interface",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -1024,
+        176
+      ],
+      "id": "6262c69a-32d1-49f3-9d47-20d5cdc921d1",
+      "name": "HTTP Request_Fortinet"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nconst interfaces = data[\"ietf-interfaces:interfaces\"][\"interface\"];\n\nreturn interfaces.map(iface => ({\n  json: {\n    vendor: \"Cisco\",\n    device: \"Router1\",\n    interface: iface.name,\n    status: iface.enabled ? \"UP\" : \"DOWN\",\n    timestamp: new Date().toISOString()\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -800,
+        -208
+      ],
+      "id": "9ba22b25-a6b7-439e-b02c-03a436a732b0",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "const interfaces = $input.all();\n\nreturn interfaces.map(item => ({\n  json: {\n    vendor: \"MikroTik\",\n    device: \"Core-SW\",\n    interface: item.json.name,\n    status: item.json.running ? \"UP\" : \"DOWN\",\n    timestamp: new Date().toISOString()\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -800,
+        -16
+      ],
+      "id": "35db509f-a8e3-4c8e-bc03-b2588919a0c1",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nconst interfaces = data.results;\n\nreturn interfaces.map(iface => ({\n  json: {\n    vendor: \"Fortinet\",\n    device: \"FW1\",\n    interface: iface.name,\n    status: iface.link ? \"UP\" : \"DOWN\",\n    timestamp: new Date().toISOString()\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -800,
+        176
+      ],
+      "id": "d465a27a-18d0-48c7-9602-815048ec057d",
+      "name": "Code in JavaScript2"
+    },
+    {
+      "parameters": {
+        "numberInputs": 3
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -464,
+        -16
+      ],
+      "id": "a15612b3-c646-4fae-910a-d718e8ba351c",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1cjcuIhqLRFtJGjxmmT6B61NPNbFXAD2TdSPvmufnZvI",
+          "mode": "list",
+          "cachedResultName": "Task_Sheet",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1cjcuIhqLRFtJGjxmmT6B61NPNbFXAD2TdSPvmufnZvI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1577806874,
+          "mode": "list",
+          "cachedResultName": "router_status",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1cjcuIhqLRFtJGjxmmT6B61NPNbFXAD2TdSPvmufnZvI/edit#gid=1577806874"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Vendor": "={{ $json.vendor }}",
+            "Device": "={{ $json.device }}",
+            "Interface": "={{ $json.interface }}",
+            "Status": "={{ $json.status }}",
+            "Time": "={{ $json.timestamp }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Vendor",
+              "displayName": "Vendor",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Device",
+              "displayName": "Device",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Interface",
+              "displayName": "Interface",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Time",
+              "displayName": "Time",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -256,
+        -16
+      ],
+      "id": "6ffac5a5-2851-497b-a2f2-eb8641dbae0e",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "7YBQbfI3ar8ZOQWR",
+          "name": "Google Sheets_trytolearncyber"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request_cisco",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request_mikrotik",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP Request_Fortinet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request_cisco": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request_mikrotik": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request_Fortinet": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript2": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "e03e8f3d-0836-408b-8aab-61869e9904c5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e04b4d80c1dd2a688c4034915662d8ca13ceb3a569684e649a6efc5455798548"
+  },
+  "nodeGroups": [],
+  "id": "2TTFbLd32vmeUBek",
+  "tags": []
+}

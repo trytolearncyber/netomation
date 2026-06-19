@@ -1,0 +1,57 @@
+{
+  "name": "5B_Task 1: n8n এ Manual Trigger → Cisco Mock API",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d3a1e134-5d6a-480e-b139-b662cf1fcefd",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "http://192.168.241.1:3001/cisco/interface",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "cf59dee3-2b05-4477-a1ba-78ce4c2e4756",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "d40cc152-5156-4158-b6c9-bd42bd6185f7",
+  "meta": {
+    "instanceId": "e04b4d80c1dd2a688c4034915662d8ca13ceb3a569684e649a6efc5455798548"
+  },
+  "nodeGroups": [],
+  "id": "IoVrTipuaoJ16S6M",
+  "tags": []
+}

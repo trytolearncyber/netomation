@@ -1,0 +1,57 @@
+{
+  "name": "5A_Task 1: Manual Trigger → HTTP Request → Console Log",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        -96
+      ],
+      "id": "4fd35b5a-6c7f-4d0d-a1bf-68d34d297a4a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://jsonplaceholder.typicode.com/posts/1",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -32,
+        -96
+      ],
+      "id": "31ff0bb5-361e-46c3-8897-cfffc6055e4a",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "84c157d1-18e3-477a-8b71-e2c52e871688",
+  "meta": {
+    "instanceId": "e04b4d80c1dd2a688c4034915662d8ca13ceb3a569684e649a6efc5455798548"
+  },
+  "nodeGroups": [],
+  "id": "5Q7GiMUTQXwF7ukZ",
+  "tags": []
+}

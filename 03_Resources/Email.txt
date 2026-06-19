@@ -1,0 +1,208 @@
+📧 Email Automation — 30 Projects (Netomation Reference)
+
+🟢 Beginner (1–5) — Core Logic শেখা
+Project 01 — Smart Meeting Scheduler
+
+Trigger: Gmail (meeting request email)
+Logic: AI detect intent → Calendar check → slot available?
+Action: Calendar event create + auto reply
+Skill: Gmail Trigger, OpenAI Node, Google Calendar, IF Node
+
+Project 02 — Invoice Processing Pipeline
+
+Trigger: Gmail (PDF invoice attached)
+Logic: Extract attachment → OCR → AI field extraction
+Action: Google Sheets store + payment reminder schedule
+Skill: Attachment handling, OCR, Cron Node
+
+Project 03 — Lead Qualification System
+
+Trigger: Gmail (service inquiry)
+Logic: AI classify → Hot / Warm / Cold
+Action: Hot → Slack + CRM | Warm → Sheets | Cold → auto reply
+Skill: IF Node, multi-branch routing, CRM integration
+
+Project 04 — Smart File Delivery System
+
+Trigger: Gmail ("send latest report")
+Logic: AI detect intent → Drive search → file exists?
+Action: Yes → attach + send | No → "not found" reply
+Skill: Google Drive Node, conditional logic
+
+Project 05 — Daily Email Intelligence Digest
+
+Trigger: Cron (daily 6 PM)
+Logic: Fetch last 24h emails → AI summarize → categorize
+Action: Send digest email (work / personal / spam grouped)
+Skill: Cron Node, batch processing, AI summarization
+
+
+🟡 Intermediate (6–15) — Real Business Logic
+Project 06 — Complaint Ticket System
+
+Trigger: Gmail (complaint email)
+Logic: AI classify issue type → ticket create
+Action: Jira/Trello ticket + reply with ticket ID + Slack notify
+Skill: Webhook, Jira Node, Slack Node
+
+Project 07 — Follow-up Automation
+
+Trigger: Gmail (sent email log)
+Logic: Wait 3 days → reply exists? → No → AI generate follow-up
+Action: Auto follow-up send
+Skill: Wait Node, reply detection logic
+
+Project 08 — Multi-language Smart Reply
+
+Trigger: Gmail (any language)
+Logic: AI detect language → generate reply in same language
+Action: Gmail send
+Skill: Language detection, tone-aware prompting
+
+Project 09 — Auto Report Generator
+
+Trigger: Gmail ("send weekly report")
+Logic: AI detect request → Sheets fetch data → AI format report
+Action: Gmail send structured report
+Skill: Sheets Node, data-to-report pipeline
+
+Project 10 — Spam Intelligence Filter
+
+Trigger: Gmail (new email)
+Logic: AI spam score 0–100 → IF >70 → label spam
+Action: Gmail Label Node
+Skill: Scoring logic, Gmail Label Node
+
+Project 11 — Attachment Intelligence System
+
+Trigger: Gmail (attachment received)
+Logic: OCR extract → AI summarize content
+Action: Drive store + Sheets log
+Skill: OCR pipeline, document understanding
+
+Project 12 — Email to Task Converter
+
+Trigger: Gmail ("call client tomorrow")
+Logic: AI extract action items
+Action: Notion/Todoist task create + reminder set
+Skill: Action extraction prompting, task management Node
+
+Project 13 — Feedback Sentiment Analyzer
+
+Trigger: Gmail (feedback email)
+Logic: AI sentiment analysis → score 1–5
+Action: Sheets store + Slack alert if negative
+Skill: Sentiment scoring, conditional alerting
+
+Project 14 — Approval Workflow System
+
+Trigger: Gmail (approval request)
+Logic: AI classify → Slack approval sent → approved?
+Action: Yes → confirmation email | No → rejection email
+Skill: Human-in-the-loop, Slack approval Node
+
+Project 15 — Smart Email Digest
+
+Trigger: Cron Node
+Logic: Gmail fetch → AI summarize → categorize by topic
+Action: Send digest email
+Skill: Advanced categorization, digest formatting
+
+
+🔴 Advanced (16–25) — Scaling Patterns
+Project 16 — Keyword Auto Reply Engine
+
+Logic: IF Node + OpenAI intent map → predefined responses
+Use case: FAQ automation
+
+Project 17 — Form Email Parser
+
+Logic: OpenAI → structured JSON extract → Sheets insert
+Use case: Contact form → CRM pipeline
+
+Project 18 — Drive Smart Search Reply
+
+Logic: OpenAI query parse → Drive search API → email reply
+Use case: Internal knowledge retrieval
+
+Project 19 — Smart Email Router
+
+Logic: OpenAI classify → route to correct sub-workflow
+Use case: Multi-department email handling
+
+Project 20 — VIP Alert System
+
+Logic: Sender whitelist check → IF VIP → Telegram/Slack alert
+Use case: Executive inbox monitoring
+
+Project 21 — Auto Backup System
+
+Logic: Attachment detect → Drive backup + metadata log
+Use case: Document archiving automation
+
+Project 22 — FAQ Auto Reply (RAG-based)
+
+Logic: Embedding + similarity search → best answer reply
+Use case: Support desk with knowledge base
+
+Project 23 — Sales Pipeline Tracker
+
+Logic: Email stage detection → CRM stage update
+Use case: Sales funnel automation
+
+Project 24 — Subscription Renewal Reminder
+
+Logic: Sheets expiry date → Cron check → auto reminder email
+Use case: SaaS / MSP client renewals
+
+Project 25 — Department Routing System
+
+Logic: OpenAI classify → support / sales / tech → Slack channel route
+Use case: Large team email management
+
+
+🔵 Expert (26–30) — Enterprise Level
+Project 26 — Invoice Reminder Loop
+
+Logic: Due date check → Cron → auto reminder → escalate if overdue
+Use case: Accounts receivable automation
+
+Project 27 — Smart Search Assistant
+
+Logic: Email question → Drive + Sheets + AI → structured answer
+Use case: Internal knowledge assistant
+
+Project 28 — Document Intelligence Pipeline
+
+Logic: OCR → OpenAI multi-document summary → structured output
+Use case: Legal / Finance document processing
+
+Project 29 — Personalized Broadcast Engine
+
+Logic: Sheets user list → OpenAI personalize per user → loop send
+Use case: Newsletter / campaign automation
+
+Project 30 — Full AI Email Operations Center
+
+Trigger: Gmail
+Logic: OpenAI classify → parallel workflows:
+
+Ticket system
+CRM update
+Slack alert
+Drive storage
+Follow-up scheduler
+Logging → Sheets
+
+
+Action: Analytics dashboard (Looker / Grafana)
+Skill: All 29 projects combined
+
+
+⚠️ Reality Check
+এই 30টা project সব করতে হবে না। Priority order:
+এখনই করো: Project 1, 3, 6, 7
+
+Networking background এ সবচেয়ে valuable: Project 6, 13, 20, 25, 30
+
+Portfolio এর জন্য সবচেয়ে impressive: Project 3, 22, 30
