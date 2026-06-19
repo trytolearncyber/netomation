@@ -1,4 +1,4 @@
-# 🌐 Netomation — Network AI Automation
+#Netomation — Network AI Automation
 
 > Network Engineer → AI Automation Engineer → Network AI Automation Engineer
 
@@ -6,7 +6,11 @@ A structured learning repository combining enterprise networking, AI agents, aut
 
 ---
 
-# 📂 01. Instructions
+
+##  01. Instructions
+
+<details>
+<summary>Click to expand</summary>
 
 - [Learning Rules](./01_Instructions/1_Learning_Rules.md)
 - [Course Outline](./01_Instructions/2_Course_Outline.md)
@@ -21,17 +25,57 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [Success Checklist](./01_Instructions/Success_Checklist.md)
 - [README](./01_Instructions/README.md)
 
----
-
-# 📂 02. Tasks
+</details>
 
 ---
 
-## 🔰 01–10 Day Foundation - [001A Introduction to AI Automation Agents](./02_Tasks/01-10_Day_Foundation/001_A_Day_Introduction_AI_Automation_Agents.md) - [001B Introduction to AI Automation Agents (Network)](./02_Tasks/01-10_Day_Foundation/001_B_Day_Introduction_AI_Automation_Agents_Network.md) - [002A Tools Overview (n8n, Langflow, LangChain)](./02_Tasks/01-10_Day_Foundation/002_A_Day_Tools_Overview_n8n_Langflow_LangChain.md) - [002B Tools Overview (Network)](./02_Tasks/01-10_Day_Foundation/002_B_Day_Tools_Overview_n8n_Langflow_LangChain_Network.md) - [003A Automation Environment Setup](./02_Tasks/01-10_Day_Foundation/003_A_Day_Setup_Automation_Environment.md) - [003B Automation Environment Setup (Network)](./02_Tasks/01-10_Day_Foundation/003_B_Day_Setup_Automation_Environment_Network.md) - [004A APIs & Webhooks Basics](./02_Tasks/01-10_Day_Foundation/004_A_Day_Understanding_APIs_Webhooks.md) - [004B APIs & Webhooks (Network)](./02_Tasks/01-10_Day_Foundation/004_B_Day_Understanding_APIs_Webhooks_Network.md) - [005A First n8n Workflow](./02_Tasks/01-10_Day_Foundation/005_A_Day_First_n8n_Workflow.md) - [005B First n8n Workflow (Network)](./02_Tasks/01-10_Day_Foundation/005_B_Day_First_n8n_Workflow_Network.md) - [006A Email Automation Agent](./02_Tasks/01-10_Day_Foundation/006_A_Day_Project1_Email_Automation_Agent.md) - [006B Email Automation Agent (Network)](./02_Tasks/01-10_Day_Foundation/006_B_Day_Project1_Email_Automation_Agent_Network.md) - [007A LLM Integration with n8n](./02_Tasks/01-10_Day_Foundation/007_A_Day_Integrating_LLMs_n8n.md) - [007B LLM Integration (Network)](./02_Tasks/01-10_Day_Foundation/007_B_Day_Integrating_LLMs_n8n_Network.md) - [008A Error Handling in Automation](./02_Tasks/01-10_Day_Foundation/008_A_Day_Error_Handling_n8n.md) - [008B Error Handling (Network)](./02_Tasks/01-10_Day_Foundation/008_B_Day_Error_Handling_n8n_Network.md) - [009A First Assignment](./02_Tasks/01-10_Day_Foundation/009_A_Day_First_Assignment.md) - [009B First Assignment (Network)](./02_Tasks/01-10_Day_Foundation/009_B_Day_First_Assignment_Network.md) - [010A n8n Visual Builder](./02_Tasks/01-10_Day_Foundation/010_A_Day_n8n_Visual_Builder.md) - [010B n8n Visual Builder (Network)](./02_Tasks/01-10_Day_Foundation/010_B_Day_n8n_Visual_Builder_Network.md)
+##  02. Tasks
+
+---
+
+##  01–10 Day Foundation
+
+<details>
+<summary>Expand Foundation Tasks</summary>
+
+- [001A Introduction to AI Automation Agents](./02_Tasks/01-10_Day_Foundation/001_A_Day_Introduction_AI_Automation_Agents.md)
+- [001B Introduction to AI Automation Agents (Network)](./02_Tasks/01-10_Day_Foundation/001_B_Day_Introduction_AI_Automation_Agents_Network.md)
+
+- [002A Tools Overview (n8n, Langflow, LangChain)](./02_Tasks/01-10_Day_Foundation/002_A_Day_Tools_Overview_n8n_Langflow_LangChain.md)
+- [002B Tools Overview (Network)](./02_Tasks/01-10_Day_Foundation/002_B_Day_Tools_Overview_n8n_Langflow_LangChain_Network.md)
+
+- [003A Automation Environment Setup](./02_Tasks/01-10_Day_Foundation/003_A_Day_Setup_Automation_Environment.md)
+- [003B Automation Environment Setup (Network)](./02_Tasks/01-10_Day_Foundation/003_B_Day_Setup_Automation_Environment_Network.md)
+
+- [004A APIs & Webhooks Basics](./02_Tasks/01-10_Day_Foundation/004_A_Day_Understanding_APIs_Webhooks.md)
+- [004B APIs & Webhooks (Network)](./02_Tasks/01-10_Day_Foundation/004_B_Day_Understanding_APIs_Webhooks_Network.md)
+
+- [005A First n8n Workflow](./02_Tasks/01-10_Day_Foundation/005_A_Day_First_n8n_Workflow.md)
+- [005B First n8n Workflow (Network)](./02_Tasks/01-10_Day_Foundation/005_B_Day_First_n8n_Workflow_Network.md)
+
+- [006A Email Automation Agent](./02_Tasks/01-10_Day_Foundation/006_A_Day_Project1_Email_Automation_Agent.md)
+- [006B Email Automation Agent (Network)](./02_Tasks/01-10_Day_Foundation/006_B_Day_Project1_Email_Automation_Agent_Network.md)
+
+- [007A LLM Integration with n8n](./02_Tasks/01-10_Day_Foundation/007_A_Day_Integrating_LLMs_n8n.md)
+- [007B LLM Integration (Network)](./02_Tasks/01-10_Day_Foundation/007_B_Day_Integrating_LLMs_n8n_Network.md)
+
+- [008A Error Handling in Automation](./02_Tasks/01-10_Day_Foundation/008_A_Day_Error_Handling_n8n.md)
+- [008B Error Handling (Network)](./02_Tasks/01-10_Day_Foundation/008_B_Day_Error_Handling_n8n_Network.md)
+
+- [009A First Assignment](./02_Tasks/01-10_Day_Foundation/009_A_Day_First_Assignment.md)
+- [009B First Assignment (Network)](./02_Tasks/01-10_Day_Foundation/009_B_Day_First_Assignment_Network.md)
+
+- [010A n8n Visual Builder](./02_Tasks/01-10_Day_Foundation/010_A_Day_n8n_Visual_Builder.md)
+- [010B n8n Visual Builder (Network)](./02_Tasks/01-10_Day_Foundation/010_B_Day_n8n_Visual_Builder_Network.md)
+
+</details>
 
 ---
 
 ## ⚙️ 11–17 API & Webhooks
+
+<details>
+<summary>Expand API & Webhooks</summary>
 
 - [11A API Fundamentals](./02_Tasks/11-17_Day_API_Webhook_n8n/11_A_Day_API_What_Is.md)
 - [11B API Fundamentals (Network)](./02_Tasks/11-17_Day_API_Webhook_n8n/11_B_Day_API_What_Is_Network.md)
@@ -54,9 +98,14 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [17A Merge & Wait Nodes](./02_Tasks/11-17_Day_API_Webhook_n8n/17_A_Day_Merge_Wait_Node.md)
 - [17B Merge & Wait Nodes (Network)](./02_Tasks/11-17_Day_API_Webhook_n8n/17_B_Day_Merge_Wait_Node_Network.md)
 
+</details>
+
 ---
 
-## 🔌 18–25 Network Automation
+##  18–25 Network Automation
+
+<details>
+<summary>Expand Network Automation</summary>
 
 - [18A Advanced Automation Part 1](./02_Tasks/18-25_Day_n8n_Advanced_Network/18_A_Day_n8n_Advanced_Part1.md)
 - [18B Advanced Automation Part 1 (Network)](./02_Tasks/18-25_Day_n8n_Advanced_Network/18_B_Day_n8n_Advanced_Part1_Network.md)
@@ -82,9 +131,14 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [25A AWS Integration](./02_Tasks/18-25_Day_n8n_Advanced_Network/25_A_Day_AWS_n8n_Integration.md)
 - [25B AWS Integration (Network)](./02_Tasks/18-25_Day_n8n_Advanced_Network/25_B_Day_AWS_n8n_Integration_Network.md)
 
+</details>
+
 ---
 
-## 📦 26–33 Projects
+##  26–33 Projects
+
+<details>
+<summary>Expand Projects</summary>
 
 - [26A Email Planning](./02_Tasks/26-33_Day_Projects_1_2/26_A_Day_Project1_Email_Planning.md)
 - [27A Workflow Build](./02_Tasks/26-33_Day_Projects_1_2/27_A_Day_Project1_Email_Workflow_Build.md)
@@ -96,9 +150,14 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [32A Social Testing](./02_Tasks/26-33_Day_Projects_1_2/32_A_Day_Project2_Social_Media_Testing.md)
 - [33A Social Delivery](./02_Tasks/26-33_Day_Projects_1_2/33_A_Day_Project2_Social_Media_Delivery.md)
 
+</details>
+
 ---
 
-## 🧠 34–40 RAG Project
+##  34–40 RAG Project
+
+<details>
+<summary>Expand RAG Project</summary>
 
 - [34A RAG Theory](./02_Tasks/34-40_Day_RAG_Project3/34_A_Day_RAG_n8n_Theory.md)
 - [35A RAG Planning](./02_Tasks/34-40_Day_RAG_Project3/35_A_Day_Project3_RAG_Planning.md)
@@ -108,9 +167,14 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [39A Delivery](./02_Tasks/34-40_Day_RAG_Project3/39_A_Day_Project3_Delivery.md)
 - [40A Week Review](./02_Tasks/34-40_Day_RAG_Project3/40_A_Day_Week_Review.md)
 
+</details>
+
 ---
 
-## 🤖 41–45 Multi-Agent Project
+##  41–45 Multi-Agent Project
+
+<details>
+<summary>Expand Multi-Agent</summary>
 
 - [41A Theory](./02_Tasks/41-45_Day_Multi_Agent_Project4/41_A_Day_Multi_Agent_Theory.md)
 - [42A Collector Agent](./02_Tasks/41-45_Day_Multi_Agent_Project4/42_A_Day_Project4_Collector_Agent.md)
@@ -118,9 +182,14 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [44A Reporter Agent](./02_Tasks/41-45_Day_Multi_Agent_Project4/44_A_Day_Project4_Reporter_Agent.md)
 - [45A Delivery](./02_Tasks/41-45_Day_Multi_Agent_Project4/45_A_Day_Project4_Delivery.md)
 
+</details>
+
 ---
 
-## 🧑‍💻 46–50 HITL Chatbot
+##  46–50 HITL Chatbot
+
+<details>
+<summary>Expand HITL Chatbot</summary>
 
 - [46A Stock Agent](./02_Tasks/46-50_Day_Project5_HITL_Chatbot/46_A_Day_Project5_Stock_Analysis_Agent.md)
 - [47A Human-in-the-Loop](./02_Tasks/46-50_Day_Project5_HITL_Chatbot/47_A_Day_Human_in_the_Loop.md)
@@ -128,17 +197,24 @@ A structured learning repository combining enterprise networking, AI agents, aut
 - [49A Chatbot Workflow](./02_Tasks/46-50_Day_Project5_HITL_Chatbot/49_A_Day_Chatbot_Workflow.md)
 - [50A Testing & Delivery](./02_Tasks/46-50_Day_Project5_HITL_Chatbot/50_A_Day_Chatbot_Testing_Delivery.md)
 
+</details>
+
 ---
 
-## 🚀 51–53 Final Project
+##  51–53 Final Project
+
+<details>
+<summary>Expand Final Project</summary>
 
 - [51A Langflow Intro](./02_Tasks/51-53_Day_Langflow_AWS_Final/51_A_Day_Langflow_Introduction.md)
 - [52A RAG Agents](./02_Tasks/51-53_Day_Langflow_AWS_Final/52_A_Day_Building_RAG_Agents_Langflow.md)
 - [53A Final Platform](./02_Tasks/51-53_Day_Langflow_AWS_Final/53_A_Day_Final_Project_Complete_Network_AI_Platform.md)
 
+</details>
+
 ---
 
-# 📖 Resources
+# Resources
 
 - [API Notes](./03_Resources/API_Notes.md)
 - [AWS n8n Guide](./03_Resources/AWS_n8n_Guide.md)
@@ -154,7 +230,7 @@ A structured learning repository combining enterprise networking, AI agents, aut
 
 ---
 
-# ⚙️ Workflow Library
+#  Workflow Library
 
 - [Task 1 - HTTP Workflow](./03_Resources/Workflow/5A_Task_1_Manual_Trigger_HTTP_Request_Console_Log.json)
 - [Task 2 - Schedule Trigger](./03_Resources/Workflow/5A_Task_2_Schedule_Trigger.json)
@@ -167,10 +243,8 @@ A structured learning repository combining enterprise networking, AI agents, aut
 
 # 👤 Author
 
-MD Al Moshiur Chowdhury (MAC Matrix)
-
+MAC -- MD Al Moshiur Chowdhury
 Enterprise IT & Network Engineering  
-M.Eng Information Technology
 
 ---
 
